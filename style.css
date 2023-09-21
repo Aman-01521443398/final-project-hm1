@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primaryFont:'Josefin Sans', sans-serif;
+    --secondaryFont: 'Roboto', sans-serif;
+    --mainColor: #FF6F61
+}
+
+/** Common Css start **/
+*{ margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,ol {list-style: none;}
+a{text-decoration: none;}
+
+h1,h2,h3,h4,h5,ul,p,span,ol {
+    margin: 0;
+    padding: 0;
+}
+
+body {font-family: var(--primaryFont);}
+/** common css end **/
+
+/** 
+Theme Name = Aytor Ecommerce
+Developer = Mohammed Aman Ullah
+
+/**  Home page
+Sl No   particular name
+     1.      Navebar 
+     2.      Banner
+     3.      Services 
+     
+**/
+
+/* Home page start here */
+
+/* Navebar Star here*/
+.sm-Navbar, .myCustomNav {
+    background: rgb(255,111,97);
+    background: radial-gradient(circle, rgba(255,111,97,1) 3%, rgba(148,187,233,0.8771708512506565) 99%); 
+}
+
+.sm-Navbar .myCustomNav .iconsGroup li,
+.myCustomNav .iconsGroup li{
+    display: inline-block;
+}
+
+.sm-Navbar .iconsGroup  li a,
+.sm-Navbar .iconsGroup  li span,
+.myCustomNav .iconsGroup  li a,
+.myCustomNav .iconsGroup  li span {
+     
+    color: #151A32;
+    position: relative;
+    font-size: 24px;
+    margin: 0px 10px;
+}
+
+.sm-Navbar .iconsGroup  li a span .cardNumber,
+.myCustomNav .iconsGroup  li a span.cardNumber{
+    background-color: var(--mainColor);
+    color: white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    display: block;
+    text-align: center;
+    line-height: 17px;
+    top: -5px;
+    right: -17px;
+    font-size: 14px;
+    position: absolute;
+   }
+
+.myCustomNav #naveMenu ul li a{ 
+    margin: 43px 0px;
+    padding: 0px 22.5px;
+    font-family: var(--primaryFont);
+    font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+}
+
+.myCustomNav #naveMenu ul li:hover a{
+    color: #FF6F61;
+}
+
+/** Sidebar start**/
+.sm-Navbar .menu button{ 
+    border: none;
+    font-size: 24px;
+    background-color: white;
+}
+
+
+.sm-menu ul li a{
+    border-bottom: 2px solid rgb(227, 227, 232) ;
+    display: block;
+    padding: 10px;
+    color: #151A32;
+}
+/** Sidebar end**/
+
+/* Navebar Ends here */
+
+/* Banner start here*/
+
+#Banner .slide {
+    height: 800px;
+}
+
+#Banner .slide h5 {
+ color: #1D1D1D;
+font-size: 18px;
+font-weight: 600;
+line-height: 28px;
+}
+
+#Banner .slide h2{
+color: #1D1D1D;
+font-size: 64px;
+font-weight: 700;
+line-height: 74px;
+margin: 14px 0px 16px;
+transition-delay: 0.1s;}
+
+
+#Banner .slide p{
+color: #1D1D1D;
+font-family: var(--secondaryFont);
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+transition-delay: 0.2s;}
+
+#Banner .slide a {
+  background-color: var(--mainColor);
+color: var(--Comon-Colot, #FFF);
+text-align: center;
+font-size: 18px;
+font-weight: 600;
+margin: 29px 0px;
+display: inline-block;
+line-height: 30px;
+padding: 13px 37px;
+transition-delay: 0.3s;
+}
+
+#Banner .slide *{
+    transform: translateY(80px);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease-in;
+}
+#Banner .slide.slick-active * {
+
+   transform: translateY(0px);
+    visibility: visible;
+    opacity: 1;
+}
+#Banner .BannerDots {
+    position: absolute;
+    bottom: 20%;
+    width: 100%; 
+    left:50%;
+    transform: translateX(-50%)
+}
+#Banner .BannerDots li{
+    display: inline-block;
+}
+
+#Banner .BannerDots li button {
+    border: none;
+    color: transparent;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+          
+}
+#Banner .BannerDots li.slick-active button {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background:  var(--mainColor);
+}
+
+
+
+
+
+/* Banner start here*/
+
+/* Home page end here */
+
+
